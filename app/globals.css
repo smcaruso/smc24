@@ -3,27 +3,80 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 0, 0, 0;
+  --accent-color: #ffa800;
+  --secondary-color: #888888;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+main.mainPage {
+  padding: 2rem;
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main.mainPage .fullPageNavSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+main.mainPage .fullPageNavSection.main {
+  font-size: 6rem;
+  line-height: 7rem;
+}
+
+main.mainPage .fullPageNavSection.subnav {
+  font-size: 3rem;
+  line-height: 4rem;
+  color: var(--secondary-color);
+}
+
+.fullPageNavItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 300;
+}
+
+.fullPageNavItem a:hover {
+  color: var(--accent-color);
+  transition: color 0.5s;
+}
+
+.fullPageNavItem::before {
+  width: 0;
+  opacity: 0;
+  transition: width 0.5s, opacity 1s;
+}
+
+.fullPageNavItem:hover::before {
+  opacity: 100%;
+  width: 2rem;
+  height: 55%;
+  background-color: var(--accent-color);
+  content: "";
+  left: 0;
+  translate: -2rem;
 }
 
 @layer utilities {
