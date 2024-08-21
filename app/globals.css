@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* boilerplate */
+
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-rgb: 0, 0, 0;
@@ -9,27 +11,89 @@
   --secondary-color: #888888;
 }
 
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
 }
 
-main.mainPage {
-  padding: 2rem;
+/* navigation */
+
+main {
+  padding: 0 2rem 2rem 2rem;
   width: 100dvw;
-  height: 100dvh;
+}
+
+main.mainPage {
+  height: calc(100dvh - 3rem);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 
-main header {
+header.navHeader {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+header.navHeader .navBlock {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header.navHeader:not(.showNavLinks) .navBlock.title {
+    flex-grow: 1;
+}
+
+header.navHeader:not(.showNavLinks) .navLinks, 
+header.navHeader:not(.showNavLinks) .divider {
+  display: none;
+}
+
+header .myName {
+  font-weight: 600;
+}
+
+header .subtitle, header .divider {
+  color: var(--secondary-color);
+}
+
+header .myName a:hover {
+  color: cyan;
+  filter: drop-shadow(0 0 4px cyan);
+  transition: filter 0.25s;
+
+}
+
+header.navHeader .navLinks .navBarSection {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+header.navHeader .navLinks .navBarSection.subnav {
+  color: var(--secondary-color);
+}
+
+.navBarNavItem a:hover, .navBarNavItem.active a {
+  color: var(--accent-color);
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
+  text-underline-offset: 0.35rem;
+  text-decoration-thickness: 0.2rem;
+  transition: color 0.5s, filter 0.5s;
 }
 
 main.mainPage .fullPageNavSection {
@@ -41,8 +105,11 @@ main.mainPage .fullPageNavSection {
 }
 
 main.mainPage .fullPageNavSection.main {
+  display: flex;
+  justify-content: center;
   font-size: 6rem;
   line-height: 7rem;
+  flex-grow: 1;
 }
 
 main.mainPage .fullPageNavSection.subnav {
@@ -60,7 +127,8 @@ main.mainPage .fullPageNavSection.subnav {
 
 .fullPageNavItem a:hover {
   color: var(--accent-color);
-  transition: color 0.5s;
+  filter: drop-shadow(0 0 6px var(--accent-color));
+  transition: color 0.5s, filter 0.5s;
 }
 
 .fullPageNavItem::before {
@@ -79,8 +147,16 @@ main.mainPage .fullPageNavSection.subnav {
   translate: -2rem;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* contact page */
+
+main.contact {
+  height: calc(100dvh - 5rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact .contactCard {
+  padding: 2rem;
+  border: 0.5px solid #ffffff;
 }
