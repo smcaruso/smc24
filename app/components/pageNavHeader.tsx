@@ -21,7 +21,7 @@ export default function NavHeader() {
                 <div className={cormorantUnicase.className + " myName navHeaderItem"}>
                     <Link href="/">Steven M. Caruso</Link>
                     </div>
-                <div className="divider navHeaderItem ">//</div>
+                <div className="divider navHeaderItem ">&#47;&#47;</div>
                 <div className="subtitle navHeaderItem">Design for Spatial and Immersive Media</div>
             </div>
             <div className="navLinks navBlock">
