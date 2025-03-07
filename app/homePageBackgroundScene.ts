@@ -20,22 +20,25 @@ export class HomePageBackgroundScene {
     
     this.renderer.setClearColor(0x080808, 0)
     this.renderer.setPixelRatio(window.devicePixelRatio);
-    this.scene.fog = new THREE.FogExp2(0x080808, 0.075)
+    this.scene.fog = new THREE.FogExp2(0x080808, 0.15)
 
     const gridHelper = new THREE.GridHelper(100, 100, 0x444444, 0x444444)
-    const defaultCube = new THREE.Mesh(new THREE.BoxGeometry(1,1,1), new THREE.MeshBasicMaterial(0xffffff))
+    const defaultCube = new THREE.Mesh(new THREE.BoxGeometry(1,1,1), new THREE.MeshBasicMaterial({color: 0x00ffff}))
     this.scene.add( gridHelper, defaultCube )
 
-
-    this.camera.position.set( 5, 5, 5 )
-    this.camera.rotateX(-Math.PI * 0.25)
+    this.camera.setViewOffset(
+      window.innerWidth, window.innerHeight, // fullWidth, fullHeight
+      (window.innerWidth * -0.125), (window.innerHeight * 0.0625), // x and y offset
+      window.innerWidth, window.innerHeight // frustum size
+    )
+    this.camera.updateProjectionMatrix()
 
     const mainElement = document.querySelector(".mainPage")
 
     this.controls = new OrbitControls(this.camera, mainElement as HTMLElement)
     this.controls.enableDamping = true
     this.controls.zoomToCursor = true
-    this.camera.position.set( 5, 5, 5 )
+    this.camera.position.set( 2, 2, 2 )
     this.controls.target.set(0, 0, 0)
     this.controls.update()
 

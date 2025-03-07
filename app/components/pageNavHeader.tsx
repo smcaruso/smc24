@@ -16,7 +16,7 @@ export default function NavHeader() {
 
     return (
 
-        <header className={"navHeader" + conditionalClass}>
+        <nav className={"navHeader" + conditionalClass}>
             <div className="title navBlock">
                 <div className={cormorantUnicase.className + " myName navHeaderItem"}>
                     <Link href="/">Steven M. Caruso</Link>
@@ -36,7 +36,7 @@ export default function NavHeader() {
                     <NavBarNavItem linkTitle="Contact" />
                 </div>
             </div>
-        </header>
+        </nav>
 
     )
 
