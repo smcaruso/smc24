@@ -20,7 +20,7 @@ export class HomePageBackgroundScene {
     
     this.renderer.setClearColor(0x080808, 0)
     this.renderer.setPixelRatio(window.devicePixelRatio);
-    this.scene.fog = new THREE.FogExp2(0x080808, 0.15)
+    this.scene.fog = new THREE.FogExp2(0x101010, 0.15)
 
     const gridHelper = new THREE.GridHelper(100, 100, 0x444444, 0x444444)
     const defaultCube = new THREE.Mesh(new THREE.BoxGeometry(1,1,1), new THREE.MeshBasicMaterial({color: 0x00ffff}))

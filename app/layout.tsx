@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Cormorant_Upright, Barlow } from "next/font/google";
 import NavHeader from "./components/pageNavHeader"
 import "./globals.css";

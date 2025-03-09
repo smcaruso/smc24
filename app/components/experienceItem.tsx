@@ -1,30 +1,36 @@
 import Link from 'next/link'
+import Image from 'next/image'
+
+import { ExperienceData } from '../types'
+
 import { Cormorant } from "next/font/google"
 const cormorant = Cormorant({ weight: ["300", "400", "500", "600", "700"], subsets: ["latin"] })
 
-export default function ExperienceItem() {
+export default function ExperienceItem({ data }: { data: ExperienceData }) {
     
     return (
         <section className="experienceItem">
           <div className="itemContent">
             <div className="leftColumn">
-              <h3 className="dateRange">2024—<br />Present</h3>
+              <h3 className="dateRange">{data.dateRange}</h3>
             </div>
             <div className="innerContent">
-              <h3 className="title">Senior Product Designer,</h3>
-              <h4 className="company">Infinite Reality</h4>
-              <p className={`${cormorant.className} headline`}>UX design + design engineering lead for iR Studio, a web-based 3D scene editor and publishing platform.</p>
-              <div className="project">
-                <h5 className="projectTitle">iR Studio Editor</h5>
-                <p className="projectDescription">Led the redesign of the editor software&apos;s file and asset management interface to improve the search experience for a growing library of ready-made content. Developed prototypes for 3D viewport navigation, selection modes and object manipulation, with research participation from technical art and content teams. Created a one-step interaction for publishing scenes to a public URL, improving successful publish rates for users in beta testing.</p>
-              </div>
-              <div className="project">
-                <h5 className="projectTitle">Design System</h5>
-                <p className="projectDescription">Audited and reorganized the product and web platform design system to reduce redundancies, plan for future expansion and improve editing workflow performance. Created components and style guides for quickly assembling complex tool and property sheets. Edited UX copy throughout the product to simplify technical terminology and add clarity to editor behaviors.</p>
-              </div>
+              <h3 className="title">{data.title},</h3>
+              <h4 className="company">{data.company}</h4>
+              <p className={`${cormorant.className} headline`}>{data.headline}</p>
+
+              {data.projects.map((project, index) => (
+                <div className="project" key={index}>
+                  <h5 className="projectTitle">{project.title}</h5>
+                  <p className="projectDescription">{project.description}</p>
+                </div>
+              ))}
+
             </div>
             <div className="rightColumn">
-              <div className="companyLogo"></div>
+              <div className="companyLogo">
+                <Image src={data.companyLogo!} alt={`${data.company} logo`} width={200} height={200} style={{ width: "100%", height: "auto" }} />
+              </div>
             </div>
           </div>
         </section>
