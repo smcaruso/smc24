@@ -17,11 +17,10 @@ export default function Home() {
         <div className="fullPageNavSection main">
           <FullPageNavItem linkTitle="Projects" />
           <FullPageNavItem linkTitle="Experience" />
-          <FullPageNavItem linkTitle="Bio" />
-          <FullPageNavItem linkTitle="Weblog" />
+          <FullPageNavItem linkTitle="Blog" />
         </div>
         <div className="fullPageNavSection subnav">
-          <FullPageNavItem linkTitle="Tools" />
+          <FullPageNavItem linkTitle="Bio" />
           <FullPageNavItem linkTitle="Contact" />
         </div>
       </main>

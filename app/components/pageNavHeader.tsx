@@ -28,11 +28,10 @@ export default function NavHeader() {
                 <div className="navBarSection main">
                     <NavBarNavItem linkTitle="Projects"/>
                     <NavBarNavItem linkTitle="Experience" />
-                    <NavBarNavItem linkTitle="Bio" />
-                    <NavBarNavItem linkTitle="Weblog" />
+                    <NavBarNavItem linkTitle="Blog" />
                 </div>
                 <div className="navBarSection subnav">
-                    <NavBarNavItem linkTitle="Tools" />
+                    <NavBarNavItem linkTitle="Bio" />
                     <NavBarNavItem linkTitle="Contact" />
                 </div>
             </div>

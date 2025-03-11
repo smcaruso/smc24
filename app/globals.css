@@ -21,6 +21,9 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
 }
 
 /* navigation */
@@ -74,7 +77,9 @@ nav.navHeader .navLinks .navBarSection.subnav {
   color: var(--secondary-color);
 }
 
-.navBarNavItem a:hover, .navBarNavItem.active a {
+.navBarNavItem a:hover,
+.navBarNavItem.active a,
+.contactCard a:hover {
   color: var(--accent-color);
   text-decoration: underline;
   text-decoration-color: var(--accent-color);
@@ -141,10 +146,7 @@ header.fullPageContentHeader {
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  padding-left: var(--outer-padding);
-  padding-right: var(--outer-padding);
-  padding-top: 0;
-  padding-bottom: var(--outer-padding);
+  padding: calc(var(--outer-padding) * 0.5) var(--outer-padding) var(--outer-padding);
   gap: 1rem;
 }
 
@@ -166,6 +168,10 @@ header.fullPageContentHeader {
 main {
   padding: 0 var(--outer-padding) 0 var(--outer-padding);
   z-index: 100;
+}
+
+main:not(.mainPage) {
+  flex-grow: 1;
 }
 
 main.mainPage {
@@ -192,6 +198,26 @@ footer {
 }
 
 /* experience page */
+
+section.skillsSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  padding: 0 var(--outer-padding) var(--outer-padding) var(--outer-padding);
+}
+
+section.skillsSection h2 {
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 0 0 1rem 0;
+  text-align: justify;
+}
+
+section.skillsSection li {
+  padding: 0.25rem 0;
+  font-size: smaller;
+}
 
 section.experienceItem:not(:last-child) {
   border-bottom: 0.5px solid var(--secondary-color);
@@ -323,13 +349,32 @@ canvas#bgCanvas {
 /* contact page */
 
 main.contact {
-  height: calc(100dvh - 5rem);
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .contact .contactCard {
-  padding: 2rem;
-  border: 0.5px solid #ffffff;
+  display: grid;
+  grid-template-rows: 1fr;
+  font-size: 1.5rem;
+  gap: 0;
+}
+
+.contact .contactCard .contactItem {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  height: 3rem;
+  gap: 2rem;
+}
+
+.contact .contactCard .contactItem div {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.contact .contactCard .contactItem .icon {
+  border-right: 1px solid var(--secondary-color);
 }
