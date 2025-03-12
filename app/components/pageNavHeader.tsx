@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import { useEffect, useRef } from "react"
 import { usePathname } from "next/navigation"
 import { Cormorant_Unicase } from "next/font/google"
 
@@ -12,11 +13,16 @@ export default function NavHeader() {
 
     const pathName = usePathname()
     let conditionalClass: string = ""
-    if (pathName !== "/") {
-      conditionalClass = " showNavLinks"
-      document.body.classList.remove("no-outline")
-    }
-    else { document.body.classList.add("no-outline") }
+    if (pathName !== "/") { conditionalClass = " showNavLinks" }
+
+
+    useEffect(() => {
+        if (pathName !== "/") {
+            document.body.classList.add("outline")
+        } else {
+            document.body.classList.remove("outline")
+        }
+    }, [pathName])
 
     return (
 

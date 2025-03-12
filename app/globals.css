@@ -25,13 +25,15 @@ body {
   flex-direction: column;
   margin: auto;
   min-height: 100dvh;
-  max-width: 1600px;
-  outline: 0.5px solid var(--secondary-color);
+  max-width: 100dvw;
+  outline: none;
   outline-offset: 0.5px;
+  transition: max-width 0.5s ease-in-out;
 }
 
-body.no-outline {
-  outline: none;
+body.outline {
+  max-width: 1600px;
+  outline: 0.5px solid var(--secondary-color);
 }
 
 /* navigation */
