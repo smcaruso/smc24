@@ -13,10 +13,66 @@ export default function Home() {
       <p className={`${cormorant.className} fullPageContentDescription`}>Soon, a bunch of text. A whole lot of text! All I have to do is write it.</p>
     </header>
     <main className="blog fullPageContentSection">
-              <section className="experienceItem" style={{height: 500}}>
+              <section className="experienceItem">
                 <div className="itemContent">
                   <div className="leftColumn">
-                    <h3 className="dateRange">March 10, 2025</h3>
+                    <h3 className="dateRange">3 10 25</h3>
+                  </div>
+                  <div className="innerContent">
+                    <h3 className="title">Sample Post</h3>
+                    <h4 className="company">hehe</h4>
+                    <p className={`${cormorant.className} headline`}>hoho</p>
+                  </div>
+                  <div className="rightColumn">
+                  </div>
+                </div>
+              </section>
+              <section className="experienceItem">
+                <div className="itemContent">
+                  <div className="leftColumn">
+                    <h3 className="dateRange">3 10 25</h3>
+                  </div>
+                  <div className="innerContent">
+                    <h3 className="title">Sample Post</h3>
+                    <h4 className="company">hehe</h4>
+                    <p className={`${cormorant.className} headline`}>hoho</p>
+                  </div>
+                  <div className="rightColumn">
+                  </div>
+                </div>
+              </section>
+              <section className="experienceItem">
+                <div className="itemContent">
+                  <div className="leftColumn">
+                    <h3 className="dateRange">3 10 25</h3>
+                  </div>
+                  <div className="innerContent">
+                    <h3 className="title">Sample Post</h3>
+                    <h4 className="company">hehe</h4>
+                    <p className={`${cormorant.className} headline`}>hoho</p>
+                  </div>
+                  <div className="rightColumn">
+                  </div>
+                </div>
+              </section>
+              <section className="experienceItem">
+                <div className="itemContent">
+                  <div className="leftColumn">
+                    <h3 className="dateRange">3 10 25</h3>
+                  </div>
+                  <div className="innerContent">
+                    <h3 className="title">Sample Post</h3>
+                    <h4 className="company">hehe</h4>
+                    <p className={`${cormorant.className} headline`}>hoho</p>
+                  </div>
+                  <div className="rightColumn">
+                  </div>
+                </div>
+              </section>
+              <section className="experienceItem">
+                <div className="itemContent">
+                  <div className="leftColumn">
+                    <h3 className="dateRange">3 10 25</h3>
                   </div>
                   <div className="innerContent">
                     <h3 className="title">Sample Post</h3>

@@ -23,7 +23,15 @@ body {
   background: rgb(var(--background-rgb));
   display: flex;
   flex-direction: column;
+  margin: auto;
   min-height: 100dvh;
+  max-width: 1600px;
+  outline: 0.5px solid var(--secondary-color);
+  outline-offset: 0.5px;
+}
+
+body.no-outline {
+  outline: none;
 }
 
 /* navigation */
@@ -104,6 +112,7 @@ main.mainPage .fullPageNavSection.main {
   flex-grow: 1;
 }
 
+
 main.mainPage .fullPageNavSection.subnav {
   font-size: 3rem;
   line-height: 4rem;
@@ -117,7 +126,8 @@ main.mainPage .fullPageNavSection.subnav {
   font-weight: 300;
 }
 
-.fullPageNavItem a:hover {
+.fullPageNavItem a:hover,
+.projectPageNavItem:hover h2 {
   color: var(--accent-color);
   filter: drop-shadow(0 0 6px var(--accent-color));
   transition: color 0.5s, filter 0.5s;
@@ -185,7 +195,6 @@ main.mainPage {
 main.fullPageContentSection {
   border-top: 0.5px solid var(--secondary-color);
   border-bottom: 0.5px solid var(--secondary-color);
-  /* margin-bottom: var(--outer-padding); */
 }
 
 footer {
@@ -377,4 +386,187 @@ main.contact {
 
 .contact .contactCard .contactItem .icon {
   border-right: 1px solid var(--secondary-color);
+}
+
+/* project page */
+main.projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectPageNavItem {
+  display: grid;
+  grid-template-columns: 1fr 9fr 2fr;
+  border-right: 0.5px solid var(--secondary-color);
+  flex-grow: 1;
+  transition: grid-template-columns 0.5s ease-in-out;
+}
+
+.projectPageNavItem:hover {
+  grid-template-columns: 1fr 5fr 6fr;
+  cursor: pointer;
+}
+
+.projectPageNavItem h2 {
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 100;
+  text-wrap: nowrap;
+  overflow: hidden;
+}
+
+.projectPageNavItem:not(:last-child) {
+  border-bottom: 0.5px solid var(--secondary-color);
+}
+
+.projectPageNavItem .col {
+  border-left: 0.5px solid var(--secondary-color);
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--foreground-rgb);
+  transition: background-color 0.5s ease-in-out, filter 1s ease-in-out;
+}
+
+.projectPageNavItem .col:first-child,
+.projectPageNavItem .col:last-child {
+  justify-content: end;
+}
+
+.projectPageNavItem:hover .col:first-child {
+  background-color: var(--accent-color);
+}
+
+.projectPageNavItem:not(:hover) .col:last-child {
+  filter:grayscale();
+}
+
+/* project page content */
+
+main.project .h3,
+main.project .p {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+main.project .h3 h3 {
+  font-size: larger;
+  font-weight: 600;
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+main.project .p p {
+  padding: 1rem 2rem;
+}
+
+main.project .h3:before,
+main.project .h3:after,
+main.project .p:before,
+main.project .p:after {
+  border-left: 0.5px solid var(--secondary-color);
+  border-right: 0.5px solid var(--secondary-color);
+  padding: 2rem 2rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  font-weight: 600;
+  content: "";
+}
+
+main.project .h3:before {
+  content: "#";
+  font-size: larger;
+}
+
+main.project figure {
+  border-left: 0.5px solid var(--secondary-color);
+  border-right: 0.5px solid var(--secondary-color);
+}
+
+main.project figure.left .justify {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+
+main.project figure.right .justify {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+main.project figure .justify .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 1rem;  
+  font-size: smaller;
+  font-weight: 100;
+  font-style: italic;
+}
+
+main.project figure.left .justify .col {
+  align-items: start;
+}
+
+main.project figure.right .justify .col {
+  align-items: end;
+}
+
+main.project figure .justify .col:before {
+  content: "🌄";
+}
+
+main.project figure figcaption:before {
+content: "";
+}
+
+main.project figure figcaption {
+  display: grid;
+  font-size: smaller;
+  font-weight: 100;
+  font-style: italic;
+  line-height: 3rem;
+  border-bottom: 0.5px solid var(--secondary-color);
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+main.project figure.left figcaption:after {
+  content: "";
+  border-left: 0.5px solid var(--secondary-color);
+}
+
+main.project figure.right figcaption:before {
+  content: "";
+  border-right: 0.5px solid var(--secondary-color);
+}
+
+main.project figure.right figcaption {
+  text-align: right;
+}
+
+section.footnotes {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  border-top: 0.5px solid var(--secondary-color);
+  border-right: 0.5px solid var(--secondary-color);
+  border-left: 0.5px solid var(--secondary-color);
+}
+
+section.footnotes .col {
+  padding: 2rem;
+  text-align: right;
+}
+
+section.footnotes .links {
+  color: var(--accent-color);
+  line-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+section.footnotes .links a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
+  text-underline-offset: 0.35rem;
+  text-decoration-thickness: 1px;
 }

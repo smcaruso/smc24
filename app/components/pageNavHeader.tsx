@@ -12,7 +12,11 @@ export default function NavHeader() {
 
     const pathName = usePathname()
     let conditionalClass: string = ""
-    if (pathName !== "/") { conditionalClass = " showNavLinks"}
+    if (pathName !== "/") {
+      conditionalClass = " showNavLinks"
+      document.body.classList.remove("no-outline")
+    }
+    else { document.body.classList.add("no-outline") }
 
     return (
 
