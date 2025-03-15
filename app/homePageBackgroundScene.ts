@@ -35,7 +35,7 @@ export class HomePageBackgroundScene {
 
     const mainElement = document.querySelector(".mainPage")
 
-    this.controls = new OrbitControls(this.camera, mainElement as HTMLElement)
+    this.controls = new OrbitControls(this.camera, this.canvas)
     this.controls.enableDamping = true
     this.controls.zoomToCursor = true
     this.camera.position.set( 2, 2, 2 )

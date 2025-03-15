@@ -8,7 +8,11 @@ import { HomePageBackgroundScene } from "./homePageBackgroundScene"
 export default function Home() {
 
   const canvasRef = useRef(null)
-  useEffect( () => { new HomePageBackgroundScene(canvasRef.current!) } )
+  useEffect(() => {
+    if (canvasRef.current) {
+      new HomePageBackgroundScene(canvasRef.current)
+    }
+  }, [])
 
   return (
     <>

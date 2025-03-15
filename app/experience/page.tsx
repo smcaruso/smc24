@@ -88,7 +88,7 @@ export default function Home() {
   }
 
   const mkgJob: ExperienceData = {
-    dateRange: "2016—\n2023",
+    dateRange: "2013—\n2016",
     title: "Associate Senior Designer",
     company: "MKG",
     headline: "Scenic and graphic design lead for events and brand experiences.",
