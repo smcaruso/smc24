@@ -1,4 +1,10 @@
-import { ProjectFigureProps } from "./pFig"
+interface ProjectFigureProps {
+  src: string;
+  alt: string;
+  number?: number;
+  left?: boolean;
+  right?: boolean;
+}
 
 export default function Vid({ src, alt, number, left, right }: ProjectFigureProps) {
   return (
