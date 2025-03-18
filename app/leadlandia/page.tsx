@@ -35,8 +35,8 @@ export default function Home() {
       `} paddingBottom />
 
       <Fig
-        src="/projects/leadlandia/leadlandia-01.png"
-        alt="Leadlandia cover image"
+        src="/projects/leadlandia/leadlandia-02.png"
+        alt="AWE exhibit rendering."
         number={1}
         left
       />

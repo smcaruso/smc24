@@ -44,6 +44,7 @@ nav.navHeader {
   align-items: center;
   justify-content: space-between;
   padding: calc(var(--outer-padding) * 0.5) var(--outer-padding);
+  z-index: 100;
 }
 
 nav.navHeader .navBlock {
@@ -520,8 +521,14 @@ main.project figure.right .justify .col {
   align-items: end;
 }
 
-main.project figure .justify .col:before {
+main.project figure:not(.video) .justify .col:before {
   content: "🌄";
+  font-style: normal;
+}
+
+main.project figure.video .justify .col:before {
+  content: "📽️";
+  font-style: normal;
 }
 
 main.project figure figcaption:before {
