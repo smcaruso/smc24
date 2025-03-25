@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <>
-    <Image src="/projects/arfusionlab/fusion-cover.png" alt="AR Fusion Lab cover image" width={1512} height={554} style={{ width: "100%", height: "" }}></Image>
+    <Image src="/projects/arfusionlab/fusion-cover.png" alt="AR Fusion Lab cover image" width={1512} height={554} style={{ width: "100%", height: "" }} className="cover-image"></Image>
     <header className="fullPageContentHeader">
       <h1 className={`${cormorantUpright.className} fullPageContentTitle`}>AR Fusion Lab</h1>
       <p className={`${cormorant.className} fullPageContentDescription`}>A modular, narrative-driven exploration of XR platform SDK features, interaction patterns and best practices for third-party app designers and developers to learn through concrete examples and implement in their own projects.

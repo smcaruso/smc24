@@ -39,12 +39,16 @@ body.outline {
 /* navigation */
 
 nav.navHeader {
+  position: sticky;
+  top: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: calc(var(--outer-padding) * 0.5) var(--outer-padding);
-  z-index: 100;
+  z-index: 1000;
+  background-color: rgba(var(--background-rgb), 0.75);
+  backdrop-filter: blur(18px);
 }
 
 nav.navHeader .navBlock {
@@ -160,12 +164,17 @@ main.mainPage .fullPageNavSection.subnav {
 /* content area */
 
 header.fullPageContentHeader {
+  position: sticky;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: start;
   padding: calc(var(--outer-padding) * 0.5) var(--outer-padding) var(--outer-padding);
   gap: 1rem;
+  /* background-color: rgba(var(--background-rgb), 0.5); */
+  backdrop-filter: blur(36px);
+  border-top: 0.5px solid var(--secondary-color);
 }
 
 .fullPageContentHeader h1 {
@@ -585,4 +594,69 @@ section.footnotes .links a:hover {
   text-decoration-color: var(--accent-color);
   text-underline-offset: 0.35rem;
   text-decoration-thickness: 1px;
+}
+
+@media (max-width: 760px) {
+
+  :root {
+    --outer-padding: 2rem;
+  }
+
+  nav.navHeader {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .navHeaderItem.subtitle, .navHeaderItem.divider {
+    display: none;
+  }
+
+  .projectPageNavItem {
+    grid-template-columns: 1fr 11fr 0fr;
+  }
+
+  .projectPageNavItem h2 {
+    font-size: 2rem;
+  }
+
+  .projectPageNavItem .col {
+    padding: 1rem;
+  }
+
+  .projectPageNavItem .col:last-child {
+    display: none;
+  }
+
+  header.fullPageContentHeader h1 {
+    font-size: 2rem;
+  }
+
+  main.project .h3,
+  main.project .p {
+  display: flex;
+  grid-template-columns: unset;
+}
+
+main.project .h3 h3 {
+  font-size: larger;
+  font-weight: 600;
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+main.project .p p {
+  padding: 1rem 2rem;
+}
+
+main.project .h3:before,
+main.project .h3:after,
+main.project .p:before,
+main.project .p:after {
+display: none;
+}
+
+main.project .h3:before {
+  content: "#";
+  font-size: larger;
+}
+
 }
