@@ -13,13 +13,13 @@ export default function Home() {
           <p className={`${cormorant.className} fullPageContentDescription`}>Steve is a creative leader and pioneer in experience and interaction design for 3D and spatial interfaces, specializing in prototyping and experimentation with emerging technologies. Skilled at simplifying complex technical concepts, in internal and external presentations, as well as visual and written communication.</p>
         </header>
         <main className="fullPageContentSection projects">
-          <ProjectPageLink linkTitle="iR Studio Editor" />
           <ProjectPageLink linkTitle="AR Fusion Lab" />
+          <ProjectPageLink linkTitle="Chase Match Point" />
+          <ProjectPageLink linkTitle="Google IO" />
           <ProjectPageLink linkTitle="Hawkins Heroes" />
+          <ProjectPageLink linkTitle="iR Studio Editor" />
           <ProjectPageLink linkTitle="LeadLandia" />
           <ProjectPageLink linkTitle="PMI Awards" />
-          <ProjectPageLink linkTitle="Google I/O" />
-          <ProjectPageLink linkTitle="Chase Match Point" />
         </main>
         <Footer />
       </>

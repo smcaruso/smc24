@@ -431,7 +431,7 @@ main.projects {
   font-style: italic;
   font-weight: 100;
   text-wrap: nowrap;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .projectPageNavItem:not(:last-child) {
@@ -444,7 +444,7 @@ main.projects {
   align-items: center;
   padding: 2rem;
   background-color: var(--foreground-rgb);
-  transition: background-color 0.5s ease-in-out, filter 1s ease-in-out;
+  transition: background-color 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 
 .projectPageNavItem .col:first-child,
@@ -549,7 +549,8 @@ main.project figure figcaption {
   font-size: smaller;
   font-weight: 100;
   font-style: italic;
-  line-height: 3rem;
+  min-height: 3rem;
+  align-items: center;
   border-bottom: 0.5px solid var(--secondary-color);
   grid-template-columns: 1fr 4fr 1fr;
 }
@@ -628,7 +629,7 @@ section.footnotes .links a:hover {
   }
 
   header.fullPageContentHeader h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   main.project .h3,
