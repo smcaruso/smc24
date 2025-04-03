@@ -13,7 +13,7 @@ export default function ProjectPageLink(props: {linkTitle: string}) {
             <div className="col">
             </div>
             <div className="col">
-                  <h2 className={cormorant.className}>{props.linkTitle}</h2>
+                <h2 className={cormorant.className}>{props.linkTitle}</h2>
             </div>
             <div className="col" style={{ backgroundImage: `url('/${slug}.png')`, backgroundSize: 'cover', backgroundPosition: 'left' }}>
             </div>

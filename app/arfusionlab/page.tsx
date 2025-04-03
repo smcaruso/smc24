@@ -128,8 +128,8 @@ export default function Home() {
       <section className="footnotes">
         <div className="col">🔗</div>
         <div className={`links ${spaceMono.className}`}>
-          <Link href="/blog">
-            [BLOG] Reflections on AR Fusion Lab
+          <Link href="/blog/082324">
+            [1] BLOG: Reflections on AR Fusion Lab
           </Link>
         </div>
       </section>
