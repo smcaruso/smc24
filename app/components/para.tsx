@@ -12,9 +12,8 @@ export default function Para({ txt, paddingTop, paddingBottom }: ProjectParagrap
           paddingTop: paddingTop ? "2rem" : "1rem",
           paddingBottom: paddingBottom ? "2rem" : "1rem",
         }}
-      >
-        {txt}
-      </p>
+        dangerouslySetInnerHTML={{ __html: txt }}
+      />
     </div>
   )
 }

@@ -11,7 +11,7 @@ export default function NavBarNavItem(props: {linkTitle: string}) {
 
     return (
         <div className={"navBarNavItem" + activeClass}>
-            <Link href={props.linkTitle.toLocaleLowerCase()}>
+            <Link href={`/${props.linkTitle.toLocaleLowerCase()}`}>
                 {props.linkTitle}
             </Link>            
         </div>

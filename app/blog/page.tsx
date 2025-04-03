@@ -1,8 +1,10 @@
 import Footer from "../components/footer"
 import Image from "next/image"
-import { Cormorant, Cormorant_Upright } from "next/font/google"
+import Link from "next/link"
+import { Cormorant, Cormorant_Upright, Space_Mono } from "next/font/google"
 const cormorant = Cormorant({ weight: ["300", "400", "500", "600", "700"], subsets: ["latin"] })
 const cormorantUpright = Cormorant_Upright({ weight: ["300", "400", "500", "600", "700"], subsets: ["latin"] })
+const spaceMono = Space_Mono({ weight: ["400", "700"], subsets: ["latin"] })
 
 export default function Home() {
 
@@ -13,76 +15,36 @@ export default function Home() {
       <p className={`${cormorant.className} fullPageContentDescription`}>Soon, a bunch of text. A whole lot of text! All I have to do is write it.</p>
     </header>
     <main className="blog fullPageContentSection">
-              <section className="experienceItem">
-                <div className="itemContent">
-                  <div className="leftColumn">
-                    <h3 className="dateRange">3 10 25</h3>
-                  </div>
-                  <div className="innerContent">
-                    <h3 className="title">Sample Post</h3>
-                    <h4 className="company">hehe</h4>
-                    <p className={`${cormorant.className} headline`}>hoho</p>
-                  </div>
-                  <div className="rightColumn">
-                  </div>
-                </div>
-              </section>
-              <section className="experienceItem">
-                <div className="itemContent">
-                  <div className="leftColumn">
-                    <h3 className="dateRange">3 10 25</h3>
-                  </div>
-                  <div className="innerContent">
-                    <h3 className="title">Sample Post</h3>
-                    <h4 className="company">hehe</h4>
-                    <p className={`${cormorant.className} headline`}>hoho</p>
-                  </div>
-                  <div className="rightColumn">
-                  </div>
-                </div>
-              </section>
-              <section className="experienceItem">
-                <div className="itemContent">
-                  <div className="leftColumn">
-                    <h3 className="dateRange">3 10 25</h3>
-                  </div>
-                  <div className="innerContent">
-                    <h3 className="title">Sample Post</h3>
-                    <h4 className="company">hehe</h4>
-                    <p className={`${cormorant.className} headline`}>hoho</p>
-                  </div>
-                  <div className="rightColumn">
-                  </div>
-                </div>
-              </section>
-              <section className="experienceItem">
-                <div className="itemContent">
-                  <div className="leftColumn">
-                    <h3 className="dateRange">3 10 25</h3>
-                  </div>
-                  <div className="innerContent">
-                    <h3 className="title">Sample Post</h3>
-                    <h4 className="company">hehe</h4>
-                    <p className={`${cormorant.className} headline`}>hoho</p>
-                  </div>
-                  <div className="rightColumn">
-                  </div>
-                </div>
-              </section>
-              <section className="experienceItem">
-                <div className="itemContent">
-                  <div className="leftColumn">
-                    <h3 className="dateRange">3 10 25</h3>
-                  </div>
-                  <div className="innerContent">
-                    <h3 className="title">Sample Post</h3>
-                    <h4 className="company">hehe</h4>
-                    <p className={`${cormorant.className} headline`}>hoho</p>
-                  </div>
-                  <div className="rightColumn">
-                  </div>
-                </div>
-              </section>
+      <section className="blog-list">
+
+        <div className="blog-list-item">
+          <div className="date">08 23 2024</div> 
+          <div className="title">
+            <Link href="/blog/082324">
+              Reflections on AR Fusion Lab
+            </Link>
+          </div> 
+        </div>
+
+        <div className="blog-list-item">
+          <div className="date">05 20 2024</div> 
+          <div className="title">
+            <Link href="/blog/052024">
+              Conditional Mac
+            </Link>
+          </div> 
+        </div>
+
+        <div className="blog-list-item">
+          <div className="date">04 08 2024</div> 
+          <div className="title">
+            <Link href="/blog/040824">
+              Hawkins Heroes 3D Asset Optimization Pipeline
+            </Link>
+          </div> 
+        </div>
+        
+      </section>
     </main>
     <Footer />
     </>

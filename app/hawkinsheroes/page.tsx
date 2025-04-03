@@ -86,8 +86,11 @@ export default function Home() {
       <section className="footnotes">
         <div className="col">🔗</div>
         <div className={`links ${spaceMono.className}`}>
+          <Link href="/blog/040824">
+            [1] BLOG: Hawkins Heroes 3D Asset Optimization Pipeline
+          </Link>
           <Link href="https://ustwo.com/work/peloton/" target="_blank">
-            [1] Lanebreak - Ustwo
+            [2] Lanebreak - Ustwo
           </Link>
         </div>
       </section>
