@@ -22,7 +22,7 @@ export default function Home() {
 
     return (
     <>
-    <Image src="/blog/whats-a-computer.png" alt="What's a Computer?" width={1512} height={554} style={{ width: "100%", height: "" }} className="cover-image"></Image>
+    <Image src="/blog/ipad-commercial.png" alt="What's a Computer?" width={1512} height={554} style={{ width: "100%", height: "" }} className="cover-image"></Image>
     <header className="fullPageContentHeader">
       <h1 className={`${cormorantUpright.className} fullPageContentTitle`}>Conditional Mac</h1>
       <p className={`${cormorant.className} fullPageContentDescription`}>May 20, 2024</p>

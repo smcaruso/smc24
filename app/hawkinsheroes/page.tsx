@@ -70,7 +70,7 @@ export default function Home() {
       `} />
 
       <Para txt={`
-        Our own vault, at ustwo, included a wealth of experience working with Peloton to create a fitness game for their Bike called Lanebreak. Even as a strictly speculative venture, illustrating transmedia applications of these VFX assets with a plausible partnership between two huge and beloved brands generated powerful interest among our clients.
+        Our own vault, at ustwo, included a wealth of experience working with Peloton to create a fitness game for their Bike called <em>Lanebreak</em>. Even as a strictly speculative venture, illustrating transmedia applications of these VFX assets with a plausible partnership between two huge and beloved brands generated powerful interest among our clients.
       `} />
 
       <PH3>The Upside Down</PH3>
