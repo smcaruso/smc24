@@ -84,6 +84,78 @@ export default function Home() {
         This decimated mesh was used to project newly drawn topology onto for the next step.
       `} paddingTop />
 
+      <PH3>Retopology</PH3>
+
+      <Para txt={`
+        To achieve a reasonable polygon count (~20,000 triangles) with topological flow that is easily deformable during animation, a new mesh was roughly drawn on top of the original mesh and smoothed with a Catmull-Clark subdivision modifier.
+      `} paddingBottom />
+
+      <Fig
+        src="/blog/hh-05.png"
+        alt="Low-poly base mesh and detail of quad edge flow at wing joints."
+        number={5}
+        left
+      />
+
+      <Fig
+        src="/projects/hawkinsheroes/normal.gif"
+        alt="Final subdivided retopology."
+        number={6}
+        right
+      />
+
+      <PH3>Baked Normals</PH3>
+
+      <Para txt={`
+        Finer details present in the original high-LOD model were preserved by projecting the normals of that mesh onto the simplified model. This process reduces smaller pieces of geometry into texture data that is used to influence lighting in the game engine, but does not contribute to the memory footprint or animation deformation of the mesh itself.
+      `} />
+
+      <Fig
+        src="/blog/hh-06.png"
+        alt="Single-tile UV map of the model overlaid on normal map texture and simplified mesh with baked normal map applied as an unlit preview texture."
+        number={7}
+        left
+      />
+
+      <PH3>Rigging and Animation</PH3>
+
+      <Para txt={`
+        The smoothly retopologized mesh was then attached to an animation rig with bones for the major wing and body segments, omitting some of the finer details like mouth and claws that were not included in the simplified mesh. This allowed us to create multiple animation tracks, including a wing-flapping flight loop, attack movements, and a pose for the bat to transition to when killed by the player.
+      `} />
+
+      <Fig
+        src="/blog/hh-bat-anim.gif"
+        alt="Section of the cyclical flight animation overlaid with the symmetrical animation rig."
+        number={8}
+        right
+      />
+
+      <PH3>Future Pipeline Recommendations</PH3>
+
+      <Para txt={`
+        <strong>Adopt USD Workflows</strong>
+      `} />
+
+      <Para txt={`
+        The Virtual Production projects made with Unreal Engine contain a good number of assets, and could be useful in the specific case that a game is developed with the same engine; mesh, material and environment data is all transferable to a new project or level. These were of limited use to us, though, as our project was built in Unity.
+      `} />
+
+      <Para txt={`
+        The Universal Scene Description file format is intended to increase compatibility across multiple software packages by storing information in a neutral format while still allowing for interactive use. Unreal Engine supports the use of USD directly as an alternative to its internal formats. This would instantly increase the flexibility of assets used in virtual production. Similarly, using the format in other VFX would increase interoperability between assets used for offline rendering and those used in real-time effects.
+      `} />
+
+      <Para txt={`
+        <strong>Preserve Surfacing Art</strong>
+      `} />
+      
+      <Para txt={`
+        Surface design elements of VFX assets, including texture sets and shaders used by rendering engines, were not available for most of the assets we encountered. For those assets that did include texture sets, they were formatted in a way that was not useful in the game engine.
+      `} />
+
+      <Para txt={`
+        Including the working art assets for surface design—for example, an Adobe Substance project—would streamline the process of adapting high-resolution, complex textures and shaders for use in-game. 
+      `} paddingBottom />
+
       </main>
     <Footer />
     </>
