@@ -23,6 +23,10 @@ export default function Home() {
         title: "Design System",
         description: "Audited and reorganized the product and web platform design system to reduce redundancies and improve workflow performance.",
       },
+      {
+        title: "World Builder",
+        description: "Design lead for the next generation of 3D creator tools, still in development.",
+      },
     ],
     companyLogo: "/ir-logo.svg",
   }
@@ -79,10 +83,6 @@ export default function Home() {
         title: "Developer Conference Exhibits",
         description: "Led exhibit design for “sandbox” product experiences at Google I/O. Planned exhibits around content and produced concept renderings for internal discussion and iteration. Drafted technical documentation for custom-fabricated exhibit structures.",
       },
-      {
-        title: "VR Security Training Simulator",
-        description: "Developed technical art pipeline for scanning an MGM Resorts property using photogrammetry and adapting it into a 1:1 VR space in Unity. Optimized geometry and surfaces, developed interactions for navigation, and animated MetaHumans with Omniverse AI tools for cinematics.",
-      }
     ],
     companyLogo: "/smc.svg",
   }

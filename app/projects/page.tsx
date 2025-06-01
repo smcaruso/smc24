@@ -10,15 +10,17 @@ export default function Home() {
       <>
         <header className="fullPageContentHeader">
           <h1 className={`${cormorantUpright.className} fullPageContentTitle`}>Projects</h1>
-          <p className={`${cormorant.className} fullPageContentDescription`}>Steve is a creative leader and pioneer in experience and interaction design for 3D and spatial interfaces, specializing in prototyping and experimentation with emerging technologies. Skilled at simplifying complex technical concepts, in internal and external presentations, as well as visual and written communication.</p>
+          <p className={`${cormorant.className} fullPageContentDescription`}>
+            A selection of immersive projects and digital experiences—from virtual galleries to spatial storytelling—highlighting my work across mixed reality, interactive media, and emerging platforms.
+          </p>
         </header>
         <main className="fullPageContentSection projects">
-          <ProjectPageLink linkTitle="iR Studio" />
           <ProjectPageLink linkTitle="AR Fusion Lab" />
-          <ProjectPageLink linkTitle="Hawkins Heroes" />
-          <ProjectPageLink linkTitle="LeadLandia" />
           <ProjectPageLink linkTitle="PMI Awards" />
-          <ProjectPageLink linkTitle="Google IO" />
+          <ProjectPageLink linkTitle="LeadLandia" />
+          <ProjectPageLink linkTitle="Hawkins Heroes" />
+          <ProjectPageLink linkTitle="Napster 3D Studio" />
+          {/* <ProjectPageLink linkTitle="Google IO" /> */}
           <ProjectPageLink linkTitle="Chase Match Point" />
         </main>
         <Footer />
