@@ -404,6 +404,7 @@ main.contact {
 }
 
 .contact .contactCard .contactItem .icon {
+  justify-content: start;
   border-right: 1px solid var(--secondary-color);
 }
 
@@ -642,6 +643,20 @@ main.blog {
     display: none;
   }
 
+  main.mainPage {
+    height: calc(100dvh - calc(var(--outer-padding) * 3));
+  }
+
+  main.mainPage .fullPageNavSection.main {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  main.mainPage .fullPageNavSection.subnav {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
   .projectPageNavItem {
     grid-template-columns: 1fr 11fr 0fr;
   }
@@ -662,6 +677,10 @@ main.blog {
     font-size: 3rem;
   }
 
+  .fullPageContentHeader p.fullPageContentDescription {
+  font-size: 1rem;
+  }
+
   main.project .h3,
   main.project .p {
   display: flex;
@@ -671,11 +690,11 @@ main.blog {
 main.project .h3 h3 {
   font-size: larger;
   font-weight: 600;
-  padding: 2rem 2rem 1rem 2rem;
+  padding: 2rem 0 1rem 0;
 }
 
 main.project .p p {
-  padding: 1rem 2rem;
+  padding: 1rem 0;
 }
 
 main.project .h3:before,
@@ -688,6 +707,113 @@ display: none;
 main.project .h3:before {
   content: "#";
   font-size: larger;
+}
+main.project figure {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+main.project figure.left figcaption,
+main.project figure.right figcaption {
+  display: flex;
+  border: none;
+  text-align: left;
+  padding-top: 1rem;
+}
+
+main.project figure.left .justify,
+main.project figure.right .justify {
+  display: flex;
+  border: none;
+}
+
+main.project figure .justify .col {
+  display: none;
+}
+
+main.project .footnotes {
+  display: flex;
+  border: none;
+  padding: 2rem 0;
+  gap: 2rem;
+}
+
+main.project .footnotes * {
+  padding: 0;
+}
+
+section.skillsSection {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+main.experience {
+  padding: 0;
+  border: none;
+}
+
+section.experienceItem {
+  border: none;
+}
+
+section.experienceItem .itemContent {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+section.experienceItem .itemContent .leftColumn,
+section.experienceItem .itemContent .innerContent {
+  padding: 2rem;
+  border: none;
+  width: 100%;
+  text-align: left;
+  align-items: start;
+}
+
+section.experienceItem .itemContent .leftColumn {
+  border-top: .5px solid var(--secondary-color);
+  border-bottom: .5px solid var(--secondary-color);
+}
+
+section.experienceItem .itemContent .leftColumn h3 {
+  white-space: unset;
+}
+
+section.experienceItem .itemContent .rightColumn {
+  display: none;
+}
+
+.blog-list {
+  padding-bottom: 2rem;
+}
+
+.blog-list-item {
+    flex-direction: column;
+    gap: 0rem;
+}
+
+.bioColumns {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: calc(var(--outer-padding) * 0.5);
+}
+
+.bioColumns .bioImage {
+  border-left: 0;
+  padding-left: 0;
+}
+
+.contact .contactCard {
+  display: grid;
+  grid-template-rows: 1fr;
+  font-size: 1.25rem;
+  gap: 0;
+}
+
+.contact .contactCard .contactItem {
+  height: 2.5rem;
 }
 
 }
