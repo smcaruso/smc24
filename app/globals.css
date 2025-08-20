@@ -603,7 +603,7 @@ section.footnotes .links a:hover {
 .blog-list {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  /* gap: 2rem; */
 }
 
 .blog-list-item {
@@ -611,6 +611,17 @@ section.footnotes .links a:hover {
   flex-direction: row;
   gap: 3rem;
   font-size: 1.5rem;
+  border-bottom: 0.5px solid var(--secondary-color);
+  padding: 2rem 0;
+}
+
+.blog-list-item:last-of-type {
+  border-bottom: none;
+}
+
+
+.blog-list-item .date {
+  width: 8rem;
 }
 
 .blog-list-item a {
