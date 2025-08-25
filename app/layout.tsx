@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from '@vercel/analytics/next'
 import Image from "next/image";
 import { Cormorant_Upright, Barlow } from "next/font/google";
 import NavHeader from "./components/pageNavHeader"
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={barlow.className}>
         <NavHeader />
         {children}
+        <Analytics />
     </body>
     </html>
   );
