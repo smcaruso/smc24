@@ -10,7 +10,7 @@ const cormorantUpright = Cormorant_Upright({ weight: ["300", "400", "500", "600"
 export default function Home() {
 
   const irJob: ExperienceData = {
-    dateRange: "2024—\nPresent",
+    dateRange: "2024—\n2025",
     title: "Senior Product Designer",
     company: "Napster (formerly Infinite Reality)",
     headline: "UX design + design engineering lead for iR Studio, a web-based 3D scene editor and publishing platform.",
