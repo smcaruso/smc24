@@ -22,6 +22,37 @@ export default function Home() {
       </p>
     </header>
 
+    <section className="projectGoalsSection">
+      <div className="col">
+        <h2>Project Goals</h2>
+        <ul>
+          <li>Augment trade show sponsorship with interactive activations</li>
+          <li>Show agency work creatively and demonstrate technical competence</li>
+          <li>Engage with highly technical audience</li>
+          <li>Generate sales leads!</li>
+        </ul>
+      </div>
+      <div className="col">
+        <h2>Materials & Processes</h2>
+        <ul>
+          <li>3D character design and animation</li>
+          <li>Cross-platform, multimedia information architecture</li>
+          <li>UX content writing</li>
+          <li>Mobile web and kiosk application development with TypeScript and three.js</li>
+          <li>Unreal Engine 5 app development with Bluprints</li>
+        </ul>
+      </div>
+      <div className="col">
+        <h2>Products of Design</h2>
+        <ul>
+          <li>Ambient visualizer app for in-booth monitor</li>
+          <li>iPad kiosk lead generation app</li>
+          <li>Mobile web networking microsite</li>
+          <li>Reusable character designs and creative assets</li>
+        </ul>
+      </div>
+    </section>
+
     <main className="project fullPageContentSection">
 
       <PH3>Context</PH3>

@@ -22,6 +22,38 @@ export default function Home() {
       <p className={`${cormorant.className} fullPageContentDescription`}>A modular, narrative-driven exploration of XR platform SDK features, interaction patterns and best practices for third-party app designers and developers to learn through concrete examples and implement in their own projects.
       </p>
     </header>
+    
+    <section className="projectGoalsSection">
+      <div className="col">
+        <h2>Project Goals</h2>
+        <ul>
+          <li>Develop new interaction patterns for combined AR + mobile device interfaces</li>
+          <li>Create an engaging demonstration of Snapdragon Spaces SDK features</li>
+          <li>Stress-test hardware developer kit capabilities and provide feedback for improvement</li>
+          <li>Provide reusable components and document best practice for application developers to implement</li>
+        </ul>
+      </div>
+      <div className="col">
+        <h2>Materials & Processes</h2>
+        <ul>
+          <li>Interaction design for mobile and XR</li>
+          <li>Prototype design and animatics</li>
+          <li>Prototype development with TypeScript and Unity C#</li>
+          <li>3D character design and animation</li>
+          <li>Concept and style development with AI image generation</li>
+          <li>Technical art implementations in Unity</li>
+          <li>Perforance analysis and optimization with Unity and ADB profilers</li>
+        </ul>
+      </div>
+      <div className="col">
+        <h2>Products of Design</h2>
+        <ul>
+          <li>Android app with narrative SDK demo</li>
+          <li>Unity project distributed with SDK packages</li>
+          <li>Documented interaction patterns and HI guidelines</li>
+        </ul>
+      </div>
+    </section>
 
     <main className="project fullPageContentSection">
 

@@ -23,17 +23,40 @@ export default function Home() {
       </p>
     </header>
 
+    <section className="projectGoalsSection">
+      <div className="col">
+        <h2>Project Goals</h2>
+        <ul>
+          <li>Promote the Chase-US Open partnership with a series of experiential activations</li>
+          <li>Leverage emerging technologies and media to modernize brand perception</li>
+        </ul>
+      </div>
+      <div className="col">
+        <h2>Materials & Processes</h2>
+        <ul>
+          <li>Game design and concept development</li>
+          <li>Interaction and UI design for VR</li>
+          <li>Character art direction</li>
+          <li>Sponsor pavilion environmental design</li>
+          <li>Design documentation for custom fabrication</li>
+          <li>Haptic device prototyping</li>
+        </ul>
+      </div>
+      <div className="col">
+        <h2>Products of Design</h2>
+        <ul>
+          <li>Scripted VR tennis umpire experience</li>
+          <li>Custom-fabricated umpire chairs with haptic motors and air blowers</li>
+          <li>Sponsor kiosk build-outs for welcome center and VR experience</li>
+          <li>Modular equipment enclosures for sponsor lounge and corporate headquarters</li>
+          <li>Pop-up stadium structure for public plaza activation</li>
+        </ul>
+      </div>
+    </section>
+
     <main className="project fullPageContentSection">
 
       <PH3>Context</PH3>
-
-      {/* <Vid
-        src="/projects/arfusionlab/fusion-01.mp4"
-        alt="First-Time User Experience (VIDEO)"
-        number={1}
-        left
-      /> */}
-
 
       <Para txt={`
         In one of the longest-running corporate sponsorships in history, JPMorgan Chase has supported the US Open for over forty years. With each tournament, the bank has shown up with sponsored lounges, pavilions, courtside advertisements, and all kinds of experiential marketing.

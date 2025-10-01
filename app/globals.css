@@ -233,7 +233,8 @@ section.skillsSection {
   padding: 0 var(--outer-padding) var(--outer-padding) var(--outer-padding);
 }
 
-section.skillsSection h2 {
+section.skillsSection h2,
+section.projectGoalsSection h2 {
   font-weight: 600;
   font-size: 1rem;
   text-transform: uppercase;
@@ -241,7 +242,8 @@ section.skillsSection h2 {
   text-align: justify;
 }
 
-section.skillsSection li {
+section.skillsSection li,
+section.projectGoalsSection li {
   padding: 0.25rem 0;
   font-size: smaller;
 }
@@ -462,6 +464,13 @@ main.projects {
 }
 
 /* project page content */
+
+section.projectGoalsSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  padding: 0 var(--outer-padding) var(--outer-padding) var(--outer-padding);
+}
 
 main.project .h3,
 main.project .p {
@@ -754,7 +763,7 @@ main.project .footnotes * {
   padding: 0;
 }
 
-section.skillsSection {
+section.skillsSection, section.projectGoalsSection {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
 }

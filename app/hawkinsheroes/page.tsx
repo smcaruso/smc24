@@ -23,6 +23,36 @@ export default function Home() {
       </p>
     </header>
 
+    <section className="projectGoalsSection">
+      <div className="col">
+        <h2>Project Goals</h2>
+        <ul>
+          <li>Prove viability of reusing 3D VFX assets in "transmedia" applications</li>
+          <li>Leverage client partnerships to generate executive interest</li>
+          <li>Create a unique and engaging game experience for demonstration</li>
+        </ul>
+      </div>
+      <div className="col">
+        <h2>Materials & Processes</h2>
+        <ul>
+          <li>Game design and concept development</li>
+          <li>Art style development with AI-generated imagery</li>
+          <li>VFX asset audit and conversion from Maya and Unreal Engine</li>
+          <li>Asset animation, retopology and shading</li>
+          <li>Level design and implementation in Unity</li>
+          <li>Touch and controller interaction design and prototyping</li>
+          <li>iPadOS app deployment through TestFlight and performance optimization with Unity and Xcode profilers</li>
+        </ul>
+      </div>
+      <div className="col">
+        <h2>Products of Design</h2>
+        <ul>
+          <li>Cycling simulator game for iPad</li>
+          <li>Documented VFX asset conversion pipeline</li>
+        </ul>
+      </div>
+    </section>
+
     <main className="project fullPageContentSection">
 
       <PH3>Context</PH3>

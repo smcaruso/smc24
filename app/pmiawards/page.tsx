@@ -23,6 +23,36 @@ export default function Home() {
       </p>
     </header>
 
+    <section className="projectGoalsSection">
+      <div className="col">
+        <h2>Project Goals</h2>
+        <ul>
+          <li>Enhance virtual events beyond the existing platform</li>
+          <li>Celebrate professional award recipients with a thoughtful custom experience</li>
+          <li>Prioritize accessibilty and optimized performance for a less-technical audience</li>
+          <li>Respond to incremental revisions and event-based content changes</li>
+        </ul>
+      </div>
+      <div className="col">
+        <h2>Materials & Processes</h2>
+        <ul>
+          <li>Spatial exhibit design and information architecture</li>
+          <li>3D visualizations, animatics and web asset creation with Blender</li>
+          <li>Full-stack web development and deployment pipeline with TypeScript and three.js</li>
+          <li>Rendering performance optimization with baked lighting</li>
+          <li>Responsive mobile layouts, interactions and performance QA</li>
+        </ul>
+      </div>
+      <div className="col">
+        <h2>Products of Design</h2>
+        <ul>
+          <li>Hosted web app with interactive exhibits</li>
+          <li>Procedural, content-driven page builder</li>
+          <li>Simplified content management tools and client training</li>
+        </ul>
+      </div>
+    </section>
+
     <main className="project fullPageContentSection">
 
       <PH3>Context</PH3>

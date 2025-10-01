@@ -12,20 +12,20 @@ export default function Home() {
   const irJob: ExperienceData = {
     dateRange: "2024—\nPresent",
     title: "Senior Product Designer",
-    company: "Infinite Reality",
+    company: "Napster (formerly Infinite Reality)",
     headline: "UX design + design engineering lead for iR Studio, a web-based 3D scene editor and publishing platform.",
     projects: [
       {
         title: "iR Studio Editor",
-        description: "Led the redesign of the editor software's file and asset management interface to improve the search experience for a growing library of ready-made content.",
+        description: "Directed the redesign of the iR Studio Editor's asset management system and search experience to scale with expanding content libraries. Designed interaction patterns for viewport navigation, selection, and object manipulation in close collaboration with tech art and content teams. Introduced a streamlined publishing flow that improved scene deployment rates in beta testing.",
       },
       {
         title: "Design System",
-        description: "Audited and reorganized the product and web platform design system to reduce redundancies and improve workflow performance.",
+        description: "Rebuilt the product's design system to improve consistency and performance across teams. Designed reusable components and layout patterns for complex UIs, and rewrote UX copy to clarify functionality and reduce ambiguity in editor behavior.",
       },
       {
         title: "World Builder",
-        description: "Design lead for the next generation of 3D creator tools, still in development.",
+        description: "Led UX for World Builder, an AI-powered tool enabling procedural and generative creation of immersive experiences. Defined product requirements and design objectives informed by user research. Co-authored PRDs, mapped workflows, and delivered high-fidelity prototypes to align engineering and product efforts. Developed information architecture and content taxonomy to connect technical systems with user experience needs.",
       },
     ],
     companyLogo: "/ir-logo.svg",
