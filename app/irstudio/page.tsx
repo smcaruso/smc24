@@ -56,7 +56,7 @@ export default function Home() {
       </div>
     </section>
 
-    <main className="project fullPageContentSection">
+    {/* <main className="project fullPageContentSection">
       <PH3>First, a Note</PH3>
 
       <Para txt={`
@@ -84,7 +84,7 @@ export default function Home() {
         </div>
       </section>
 
-    </main>
+    </main> */}
     <Footer />
     </>
   )

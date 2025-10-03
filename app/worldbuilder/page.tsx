@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <>
-    <Image src="/projects/ir-studio/studio-header.png" alt="World Builder cover image" width={1512} height={554} style={{ width: "100%", height: "" }} className="cover-image"></Image>
+    <Image src="/projects/world-builder/wb-header.jpg" alt="World Builder cover image" width={1512} height={554} style={{ width: "100%", height: "" }} className="cover-image"></Image>
     <header className="fullPageContentHeader">
       <h1 className={`${cormorantUpright.className} fullPageContentTitle`}>World Builder</h1>
       <p className={`${cormorant.className} fullPageContentDescription`}>
@@ -56,7 +56,7 @@ export default function Home() {
       </div>
     </section>
 
-    <main className="project fullPageContentSection">
+    {/* <main className="project fullPageContentSection">
       <PH3>First, a Note</PH3>
 
       <Para txt={`
@@ -84,7 +84,7 @@ export default function Home() {
         </div>
       </section>
 
-    </main>
+    </main> */}
     <Footer />
     </>
   )

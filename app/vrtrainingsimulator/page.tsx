@@ -16,10 +16,11 @@ export default function Home() {
 
   return (
     <>
-    <Image src="/projects/arfusionlab/fusion-cover.png" alt="AR Fusion Lab cover image" width={1512} height={554} style={{ width: "100%", height: "" }} className="cover-image"></Image>
+    <Image src="/projects/mgm/mgm-hero.jpg" alt="MGM Security Training Simulator cover image" width={1512} height={554} style={{ width: "100%", height: "" }} className="cover-image"></Image>
     <header className="fullPageContentHeader">
-      <h1 className={`${cormorantUpright.className} fullPageContentTitle`}>AR Fusion Lab</h1>
-      <p className={`${cormorant.className} fullPageContentDescription`}>A modular, narrative-driven exploration of XR platform SDK features, interaction patterns and best practices for third-party app designers and developers to learn through concrete examples and implement in their own projects.
+      <h1 className={`${cormorantUpright.className} fullPageContentTitle`}>VR Training Simulator</h1>
+      <p className={`${cormorant.className} fullPageContentDescription`}>
+        A virtual reality simulator for training security staff at MGM Resorts properties with an emphasis on navigating a 1:1 recreation of a Resort and Casino environment and interactive scripted scenarios.
       </p>
     </header>
     
@@ -27,35 +28,32 @@ export default function Home() {
       <div className="col">
         <h2>Project Goals</h2>
         <ul>
-          <li>Develop new interaction patterns for combined AR + mobile device interfaces</li>
-          <li>Create an engaging demonstration of Snapdragon Spaces SDK features</li>
-          <li>Stress-test hardware developer kit capabilities and provide feedback for improvement</li>
-          <li>Provide reusable components and document best practices for application developers to implement</li>
+          <li>Connect immersive technologies to real-world business goals at MGM Resorts International</li>
+          <li>Pilot a "metaverse" experience program directly with front-line employees</li>
         </ul>
       </div>
       <div className="col">
         <h2>Materials & Processes</h2>
         <ul>
-          <li>Interaction design for mobile and XR</li>
-          <li>Prototype design and animatics</li>
-          <li>Prototype development with TypeScript and Unity C#</li>
-          <li>3D character design and animation</li>
-          <li>Concept and style development with AI image generation</li>
-          <li>Technical art implementations in Unity</li>
-          <li>Perforance analysis and optimization with Unity and ADB profilers</li>
+          <li>Ethnographic user research to understand internal team challenges and opportunity areas</li>
+          <li>Game loop design</li>
+          <li>Spatial UI and interaction design</li>
+          <li>Spatial information architecture</li>
+          <li>3D environment creation through photogrammetry, CAD conversion and optimization</li>
+          <li>Pipeline development for generative AI character animation</li>
         </ul>
       </div>
       <div className="col">
         <h2>Products of Design</h2>
         <ul>
-          <li>Android app with narrative SDK demo</li>
-          <li>Unity project distributed with SDK packages</li>
-          <li>Documented interaction patterns and HI guidelines</li>
+          <li>Security training simulator app for Meta Quest 2</li>
+          <li>User-expandable scenario framework and editor</li>
+          <li>Preliminary design documentation for alternative immersive opportunities</li>
         </ul>
       </div>
     </section>
 
-    <main className="project fullPageContentSection">
+    {/* <main className="project fullPageContentSection">
 
       <PH3>Context</PH3>
 
@@ -166,7 +164,7 @@ export default function Home() {
         </div>
       </section>
 
-    </main>
+    </main> */}
     <Footer />
     </>
   )

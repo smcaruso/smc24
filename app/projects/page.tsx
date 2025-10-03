@@ -17,6 +17,7 @@ export default function Home() {
         <main className="fullPageContentSection projects">
           <ProjectPageLink linkTitle="AR Fusion Lab" />
           <ProjectPageLink linkTitle="World Builder" />
+          <ProjectPageLink linkTitle="VR Training Simulator" />
           <ProjectPageLink linkTitle="LeadLandia" />
           <ProjectPageLink linkTitle="iR Studio" />
           <ProjectPageLink linkTitle="Hawkins Heroes" />
