@@ -695,6 +695,7 @@ main.blog {
 
   header.fullPageContentHeader h1 {
     font-size: 3rem;
+    line-height: 3rem;
   }
 
   .fullPageContentHeader p.fullPageContentDescription {
@@ -765,7 +766,11 @@ main.project .footnotes * {
 
 section.skillsSection, section.projectGoalsSection {
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+section.projectGoalsSection .col {
+  height: auto;
 }
 
 main.experience {

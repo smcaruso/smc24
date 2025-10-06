@@ -145,7 +145,7 @@ export default function Home() {
       />
 
       <Para txt={`
-        Of course, for ease of use during testing and maximum portability, we also built in some some simple touch controls to precisely set the output values.
+        Of course, for ease of use during testing and maximum portability, we also built in some simple touch controls to precisely set the output values.
       `} />
 
       <Vid
