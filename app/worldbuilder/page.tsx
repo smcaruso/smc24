@@ -206,22 +206,22 @@ export default function Home() {
 
       <Para txt={`
         We knew that AI integration would be a product requirement from the beginning, and the core engineering team was hard at work building an AI agent that worked with our 3D engine. At a time when every product from startups to big tech were throwing an AI chat into the interface, we needed a defter hand here that didn't eclipse our defining feature as an immersive creation tool or waste UI space on something that provided no value. <strong>It was important to me that we use AI in a smart way that doesn't have to work hard to justify itself</strong>. At the same time, giving AI too much power takes agency away from users and keeps them from learning or building a relationship with the product.
-      `} />
+      `} paddingBottom />
 
       <Fig
         src="/projects/world-builder/share-your-vision.jpg"
-        alt="The initial onboarding page asking 'Share your vision' with a multimodal chat input."
+        alt="The initial onboarding page asking 'Share your vision' with a multimodal chat input. A high-fidelity prototype with sample conversation and motion design is linked in footnote [4]."
         number={12}
         left
       />
 
       <Para txt={`
-        The <strong>final major inversion</strong> behind World Builder was to build an <strong>engine for understanding</strong> at the core of the creator experience. Instead of asking customers to learn our tool—streamlined though we made it—we opted to spend computational effort into learning the customer. Our new onboarding experience begins with a familiar open-ended multimodal chat willing to accept any input as a starting point[4]. We asked a simple, direct question: Share your vision. Examples on the page connected sample Worlds with the vision behind them, guiding people toward possible starting points for their own project.
+        The <strong>final major inversion</strong> behind World Builder was to build an <strong>engine for understanding</strong> at the core of the creator experience. Instead of asking customers to learn our tool—streamlined though we made it—we opted to spend computational effort into learning the customer. Our new onboarding experience begins with a familiar open-ended multimodal chat willing to accept any input as a starting point <strong>[4]</strong>. We asked a simple, direct question: Share your vision. Examples on the page connected sample Worlds with the vision behind them, guiding people toward possible starting points for their own project.
       `} paddingTop />
 
       <Para txt={`
         With each input, the agent would ask itself: what can I do with the information we have? It would transparently communicate its reasoning, and provide opportunities for clarification, course correction and reframing. In quick order, we could learn what kind of business the customer had, what they aimed to do, narrow down ideas for Theming and start to figure out what size World to build and what kind of Immersive Navigation patterns made sense to suggest.
-      `} />
+      `} paddingBottom />
 
       <Fig
         src="/projects/world-builder/chain-of-though.png"
