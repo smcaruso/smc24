@@ -36,7 +36,7 @@ export default function WBTaxonomyTable({ number, left, right }: TableProps) {
             <tr>
               <td>Kit</td>
               <td>a set of parts or tools relating to a common task</td>
-              <td><strong>Props</strong> and <strong>Structure</strong> conforming to a <strong>Template’s Style</strong></td>
+              <td><strong>Props</strong> and <strong>Structure</strong> conforming to a <strong>Template's Style</strong></td>
             </tr>
             <tr>
               <td>Project</td>
@@ -81,7 +81,7 @@ export default function WBTaxonomyTable({ number, left, right }: TableProps) {
             <tr>
               <td>Style</td>
               <td>a distinctive appearance aligning to a greater theme</td>
-              <td>specific materials and visual themes that a <strong>Template’s Kit</strong> conform to</td>
+              <td>specific materials and visual themes that a <strong>Template's Kit</strong> conform to</td>
             </tr>
             <tr>
               <td>Theme</td>
