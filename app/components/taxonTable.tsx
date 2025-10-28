@@ -36,7 +36,7 @@ export default function WBTaxonomyTable({ number, left, right }: TableProps) {
             <tr>
               <td>Kit</td>
               <td>a set of parts or tools relating to a common task</td>
-              <td><strong>Props</strong> and <strong>Structure</strong> conforming to a <strong>Template's Style</strong></td>
+              <td><strong>Props</strong> and <strong>Structure</strong> conforming to a <strong>Template&#39;s Style</strong></td>
             </tr>
             <tr>
               <td>Project</td>
@@ -81,7 +81,7 @@ export default function WBTaxonomyTable({ number, left, right }: TableProps) {
             <tr>
               <td>Style</td>
               <td>a distinctive appearance aligning to a greater theme</td>
-              <td>specific materials and visual themes that a <strong>Template's Kit</strong> conform to</td>
+              <td>specific materials and visual themes that a <strong>Template&#39;s Kit</strong> conform to</td>
             </tr>
             <tr>
               <td>Theme</td>
@@ -93,7 +93,7 @@ export default function WBTaxonomyTable({ number, left, right }: TableProps) {
         {!right && <div className="col">{`Fig ${number || 1}`}</div>}
       </div>
       <div className="mobileTableCaption">I've spared you this massive table since you're on a tiny screen. Rotate to landscape to view it.</div>
-      <figcaption>Information architecture for World Builder depended on a clear taxonomy inspired by theatrical metaphors. We found or synthesized common definitions of these terms to make sure our technical definitions aligned with non-technical users' expectations.</figcaption>
+      <figcaption>Information architecture for World Builder depended on a clear taxonomy inspired by theatrical metaphors. We found or synthesized common definitions of these terms to make sure our technical definitions aligned with non-technical users&#39; expectations.</figcaption>
     </figure>
   )
 }
