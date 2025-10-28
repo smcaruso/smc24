@@ -15,14 +15,13 @@ export default function Home() {
           </p>
         </header>
         <main className="fullPageContentSection projects">
-          <ProjectPageLink linkTitle="AR Fusion Lab" />
           <ProjectPageLink linkTitle="World Builder" />
-          <ProjectPageLink linkTitle="VR Training Simulator" />
-          <ProjectPageLink linkTitle="LeadLandia" />
           <ProjectPageLink linkTitle="iR Studio" />
+          <ProjectPageLink linkTitle="AR Fusion Lab" />
+          <ProjectPageLink linkTitle="VR Training Simulator" />
           <ProjectPageLink linkTitle="Hawkins Heroes" />
+          <ProjectPageLink linkTitle="LeadLandia" />
           <ProjectPageLink linkTitle="PMI Awards" />
-          {/* <ProjectPageLink linkTitle="Google IO" /> */}
           <ProjectPageLink linkTitle="Chase Match Point" />
         </main>
         <Footer />

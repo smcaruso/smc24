@@ -560,6 +560,7 @@ main.project figure figcaption {
   font-weight: 100;
   font-style: italic;
   min-height: 3rem;
+  padding: 1rem 0;
   align-items: center;
   border-bottom: 0.5px solid var(--secondary-color);
   grid-template-columns: 1fr 4fr 1fr;
@@ -577,6 +578,45 @@ main.project figure.right figcaption:before {
 
 main.project figure.right figcaption {
   text-align: right;
+}
+
+.taxonomy-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  border-top: 4px solid var(--secondary-color);
+  border-left: 4px solid var(--secondary-color);
+  border-bottom: 4px solid var(--secondary-color);
+  letter-spacing: 0.5px;
+}
+
+.taxonomy-table th {
+  /* background-color: rgb(255,255,255); */
+  /* color: #202020; */
+  text-align: left;
+  padding: 1rem 2rem;
+  font-weight: 1000;
+}
+
+.taxonomy-table td {
+  border-top: 1px solid var(--secondary-color);
+  padding: 0.5rem 2rem;
+  vertical-align: center;
+}
+
+.taxonomy-table tr td:nth-child(1) {
+  /* background-color: rgb(255,255,255); */
+  color: var(--accent-color);
+  font-weight: 600;
+  padding: 0.5rem 3rem 0.5rem 2rem;
+  height: 100%;
+}
+.taxonomy-table strong {
+  color: var(--accent-color);
+}
+
+.mobileTableCaption {
+  display: none;
 }
 
 section.footnotes {
@@ -751,6 +791,18 @@ main.project figure.right .justify {
 
 main.project figure .justify .col {
   display: none;
+}
+
+.taxonomy-table {
+  display: none;
+}
+
+.mobileTableCaption {
+  display: block;
+  border: 4px solid var(--secondary-color);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 1rem;
 }
 
 main.project .footnotes {

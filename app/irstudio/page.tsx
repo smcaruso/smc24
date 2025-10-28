@@ -154,7 +154,7 @@ export default function Home() {
           <Link href="https://viewport-proto.vercel.app" target="_blank">
             [3] Viewport interaction model prototype
           </Link>
-          <Link href="https://smcaruso.com/worldbuilder">
+          <Link href="/worldbuilder">
             [4] World Builder
           </Link>
         </div>
