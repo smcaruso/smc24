@@ -92,7 +92,7 @@ export default function WBTaxonomyTable({ number, left, right }: TableProps) {
         </table>
         {!right && <div className="col">{`Fig ${number || 1}`}</div>}
       </div>
-      <div className="mobileTableCaption">I've spared you this massive table since you're on a tiny screen. Rotate to landscape to view it.</div>
+      <div className="mobileTableCaption">I&#39;ve spared you this massive table since you&#39;re on a tiny screen. Rotate to landscape to view it.</div>
       <figcaption>Information architecture for World Builder depended on a clear taxonomy inspired by theatrical metaphors. We found or synthesized common definitions of these terms to make sure our technical definitions aligned with non-technical users&#39; expectations.</figcaption>
     </figure>
   )
