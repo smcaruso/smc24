@@ -32,7 +32,7 @@ export default function Home() {
         So, I still compose all my UI by hand. Not because of any high-minded moral stance, but it's the best way to get exactly what I need. Still, that's a lot of tedious, repetetive work—I put in all the effort to build a design system in Figma, how do I get it out and into prototypes without going all-in on React components and Storybook? 
       `} />
 
-      <PH3>It's just HTML</PH3>
+      <PH3>It#39;s just HTML</PH3>
 
       <Para txt={`
         Charette is a super-simple Figma plugin that generates HTML and CSS code from any selected frame or component. Just select what you want to export, run the plugin, and copy the generated code into CodePen or VSCode.
