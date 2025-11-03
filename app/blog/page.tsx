@@ -18,6 +18,15 @@ export default function Home() {
       <section className="blog-list">
 
         <div className="blog-list-item">
+          <div className="date">10 01 2025</div> 
+          <div className="title">
+            <Link href="/blog/100125">
+              Charette
+            </Link>
+          </div> 
+        </div>
+
+        <div className="blog-list-item">
           <div className="date">08 23 2025</div> 
           <div className="title">
             <Link href="/blog/082325">
