@@ -1,5 +1,4 @@
 import Image from "next/image"
-import Link from "next/link"
 import Footer from "../../components/footer"
 import Fig from "../../components/pFig"
 import Para from "../../components/para"
@@ -15,8 +14,8 @@ export default function Home() {
     <>
     <Image src="/blog/charette-top.png" alt="Charette cover image" width={1512} height={554} style={{ width: "100%", height: "" }} className="cover-image"></Image>
     <header className="fullPageContentHeader">
-      <h1 className={`${cormorantUpright.className} fullPageContentTitle`}>Charette: Figma Plugin for Prototyping</h1>
-      <p className={`${cormorant.className} fullPageContentDescription`}>August 23, 2025</p>
+      <h1 className={`${cormorantUpright.className} fullPageContentTitle`}>Charette - Figma Plugin for Prototyping</h1>
+      <p className={`${cormorant.className} fullPageContentDescription`}>October 1, 2025</p>
     </header>
     <main className="project fullPageContentSection">
       <PH3>Simple code generation</PH3>
