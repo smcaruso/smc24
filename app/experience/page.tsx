@@ -9,6 +9,20 @@ const cormorantUpright = Cormorant_Upright({ weight: ["300", "400", "500", "600"
 
 export default function Home() {
 
+    const us2job: ExperienceData = {
+    dateRange: "2025—\nPresent",
+    title: "XR Design Lead",
+    company: "ustwo studios and Google",
+    headline: "Supported Google's Android XR team with specialized UX design and prototyping for optical passthrough devices.",
+    projects: [
+      {
+        title: "Android XR",
+        description: "TBD",
+      }
+    ],
+    companyLogo: "/us2g.svg",
+  }
+
   const irJob: ExperienceData = {
     dateRange: "2024—\n2025",
     title: "Senior Product Designer",
@@ -113,6 +127,7 @@ export default function Home() {
     </header>
     <SkillsSection />
     <main className="experience fullPageContentSection">
+      <ExperienceItem data={us2job} />
       <ExperienceItem data={irJob} />
       <ExperienceItem data={ustwoJob} />
       <ExperienceItem data={smcJob} />
